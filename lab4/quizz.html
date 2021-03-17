@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Pedro Pereira">
+    <meta name="keywords" content="palavras chave">
+    <meta name="description" content="Website sobre ova York">
+    <link rel="shortcut icon" type="images/favicon" href="images/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Nova York</title>
+</head>
+<body>
+    <body style="background-color:beige"></body>
+    <header>
+        <h1 class="titulo">Nova York</h1>
+        <figure><img src="images/cidadeYork1.png" title="test"><figcaption><details>Cidade de Manhattan</details></figcaption></figure><br>
+    </header>
+    <nav>
+        <a href="quizz.html"><b>Quizz</b></a><span class="material-icons">assignment_late</span> |
+        <a href="comentarios.html">Comentários</a><span class="material-icons">border_color</span> |
+        <a href="../index.html">Home</a><span class="material-icons">home</span> |
+        <a href="index.html">Introdução</a><span class="material-icons">contact_page</span> |
+        <a href="info.html">Informações</a><span class="material-icons">list_alt</span> |
+        <a href="local.html">Localização</a><span class="material-icons">where_to_vote</span> |
+        <a href="multimedia.html">Multimedia</a><span class="material-icons">play_circle_outline</span> |
+        <a href="html5-css.html">HTML5 e CSS</a><span class="material-icons">horizontal_distribute</span><br>
+    </nav>
+    <main>
+    <h3> Quizz </h3>
+        <form method="post" action="nome.apelido@gmail.com"> 
+            <fieldset>
+                <legend> Identificação pessoal: </legend>
+                <p> Nome : <input type="text" name ="nome" placeholder="Nome" size="50" autofocus required></p>
+                <p> Apelido : <input type="text" name="apelido" placeholder="Apelido" size="50" autocomplete="Pereira"></p>
+                <p> Email : <input type="text" name="email" placeholder="Email" size="50" required> </p>
+            </fieldset>
+            <fieldset>
+                <legend> Quizz sobre Nova York: </legend>
+
+                <label for="quantity"><b>1. Quantos distritos tem Nova York?</b></label>
+                <input type="number" id="quantity" name="quantity" step="1"><br>
+
+                <label for="quantity"><b>2. Quantas equipas de futebol profissional existem em Nova York?</b></label>
+                <input type="number" id="quantity" name="quantity" step="1"><br>
+
+                <p><b>3. Qual é a área de Nova York?</b></p>
+                <input type="radio" name ="área" value="km²">
+                <label for="km²">777,95 km²</label><br>
+                <input type="radio" name="área" value="km²">
+                <label for="km²">1.212,60 km²</label><br>
+                <input type="radio" name="área" value ="km²">
+                <label for="km²">34.490 km²</label><br>
+                <input type="radio" name="área" value ="km²">
+                <label for="km²">434,65 km²</label><br>
+
+                <label for="quantity"><b>4. Quantas pontes existem em Nova York?</b></label>
+                <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+
+                <label for="quantity"><b>5. Qual é a probabilidade de um turista visitar Manhattan em Nova York?</b></label>
+                <input type="range" min="0" max="100" name="probabilidade" value="quantity" oninput="probabilidadeN.value = parseInt(probabilidade.value)"><output name="probabilidadeN" for="probabilidade"> 0 </output>
+
+                <p><b>6. Em quantos distritos se divide a área metropolitina de nova York?</b></p>
+                <input type="checkbox" id="disMetro" name="disMetro" value ="numero">
+                <label for="disMetro"> 3 distritos </label><br>
+                <input type="checkbox" id="disMetro" name="disMetro" value ="numero">
+                <label for="disMetro"> 1 distrito </label><br>
+                <input type="checkbox" id="disMetro" name="disMetro" value="numero">
+                <label for="disMetro"> 5 distritos </label><br>
+                <input type="checkbox" id="disMetro" name="disMetro" value="numero">
+                <label for="disMetro"> 2 distritos </label><br>
+                <input type="checkbox" id="disMetro" name="disMetro" value="numero">
+                <label for="disMetro"> 4 distritos </label><br>
+
+                <label for="favcolor"><b>7. Quais são as cores da estátua da liberdade?</b></label>
+                <input type="color" id="favcolor" name="favcolor" value="#F4FA58"> 
+                <input type="color" id="favcolor" name="favcolor" value="#58FAAC">
+                <br>
+
+                <p><b>8. A primeira fase de construção do Memorial Nacional do voo 93 aconteceu quando?</b></p>
+                <label for="datemin"> Entre :</label>
+                <input type="date" id="datemin" name="datemin" min="08-11-2009"></input> 
+                <label for="datemax"> e :</label>
+                <input type="date" id="datemax" name="datemax" max="11-09-2011"></input><br>
+                
+                <p><b>9. Como se chama este parque?</b></p>
+                <input type="image" src="images/Centralpark_quizz.jpg"><br>
+                <input type="text" id="fname" name="fname" maxlength="25" autofocus><br>
+                
+                <input type="submit" value="Submissão quizz">
+               </fieldset>
+        </form>
+        </main>
+        <footer>Pedro Pereira A21901787 Universidade Lusófona 2020/2021</footer>
+</body>
+</html>
